@@ -116,10 +116,28 @@ h2 a{
     .header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         /*grid-template-columns: 1fr 2fr;
         gap: 10px;*/ 
-        background-color: teal;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        z-index: 100;   /*paralax*/
     }
+    
+    .video{
+        position: relative;
+    }
+    .titulo{
+        position: absolute;
+        top: 350px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;   /*font (parrafo) 16px  ( 3 * 16 )*/
+    }
+    
     .logo{
         width: 20%;
     }
@@ -129,7 +147,29 @@ h2 a{
     .opciones{
         display: flex;
         
-    }    
+    } 
+    .articulo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .detalle{
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        position: absolute;
+        /*right: 120px;*/
+        top: 220px;
+        padding: 10px;
+    }
+    article img{
+        opacity: 1;
+    }
+    article img:hover{
+        opacity: 0.6;
+    }
+
 }
 
 
